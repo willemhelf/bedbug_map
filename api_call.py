@@ -5,6 +5,6 @@ import numpy as np
 
 client = Socrata("data.cityofnewyork.us", None)
 
-results = client.get("wz6d-d3jb", limit=2000)
+results = client.get("wz6d-d3jb", limit=5000) #limit can be anything but higher number slows processing speed
 
 results_df = pd.DataFrame.from_records(results)
