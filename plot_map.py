@@ -30,12 +30,11 @@ nyc_map = gpd.GeoDataFrame(
 ax = gplt.kdeplot(
     nyc_map, 
     cmap='Reds', 
-    shade=True, 
+    fill=True, 
     projection=gplt.crs.PlateCarree()
-    #extent=[-180, 180, -90, 90] Optional: set map boundaries
 )
 
-gplt.polyplot(nyc_map, ax=ax)
+gplt.polyplot(nyc, ax=ax)
 
 plt.show()
 
