@@ -11,7 +11,6 @@ from folium import plugins
 client = Socrata("data.cityofnewyork.us", None)
 results = client.get("wz6d-d3jb", limit=2000) 
 results_df = pd.DataFrame.from_records(results)
-nyc = gpd.read_file(get_path("geoda nyc")) 
 
 geo_df = gpd.GeoDataFrame(
     results_df, geometry=gpd.points_from_xy(results_df["longitude"], results_df["latitude"], crs=4326)
@@ -23,4 +22,4 @@ heat_data = [[point.xy[1][0], point.xy[0][0]] for point in geo_df.geometry]
 heat_data
 plugins.HeatMap(heat_data).add_to(m)
 
-m.save("heat_map.html")
+m.save("heat_map_all_years.html")
