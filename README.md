@@ -7,7 +7,7 @@ All code is written using Python.
 
 Jupyter Notebook files, which can be found in the `jupyter_notebooks` directory, can be run either directly in your code editor or by running the `jupyter notebook` command in the terminal followed by the name of the file you wish to run, which will open it in your browser. Be sure to select "trust notebook" in the "file" dropdown menu before running. Heatmap images and dataframes will be visualized in the Jupyter Notebook file.
 
-Python files can be run by entering `python`  followed by the name of the file you'd like to run into the terminal. Each map will generate an interactive HTML file of the selected heatmap, except for `all_years_dataframe.py`, which will print the full dataframe of API results into the console.
+Python files, found in the `python` directory, can be run by entering `python`  followed by the name of the file you'd like to run into the terminal. Each map will generate an interactive HTML file of the selected heatmap, except for `all_years_dataframe.py`, which will print the full dataframe of API results into the console.
 ### Methodology
 
 The SODA API is called utilizing the Socrata client and the results are turned into a dataframe using [pandas](https://pandas.pydata.org/). 
