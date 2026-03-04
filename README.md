@@ -20,4 +20,4 @@ A base map of New York City is generated via inputting the city's latitude and l
 
 Code to generate solely the API results in dataframe format were included in this repository to illustrate the shape of the data we worked with to create these maps. Given more time, we hope to use other data shown in these dataframes – zip code, borough, number of units, et al – to explore further data correlation. We view these maps not as the final results of our research but as a springboard for more.
 
-We also hope to explore rendering data further in the browser. An example of a heat map covering all years may be viewed [here](https://www.willemhelf.com/heat_map).
+We also hope to explore rendering data further in the browser. An example of a heat map covering all years may be viewed [here](https://www.willemhelf.com/heatmap).
